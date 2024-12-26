@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Light Academy</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки для сайта -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Стили для меню */
+        .navbar {
+            background-color: #f1c40f; /* Желтый цвет */
+        }
+
+        .navbar a {
+            color: #333;
+        }
+
+        .navbar a:hover {
+            color: white;
+            background-color: #e67e22; /* Темно-оранжевый при наведении */
+        }
+
+        /* Стиль для заголовков */
+        h1, h2 {
+            color: #f1c40f; /* Желтый цвет */
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .back-link {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Light Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О колледже</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Направления</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html"><i class="fas fa-question-circle"></i> Вопросы и ответы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Контактная информация -->
+    <div id="contact" class="section">
+        <div class="container contact-info">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами, если у вас есть вопросы, предложения или пожелания!</p>
+
+            <h2>Наши контакты:</h2>
+            <ul>
+                <li><strong>Адрес:</strong> сухебатора 23</li>
+                <li><strong>Телефон:</strong> +996755301363</li>
+                <li><strong>Email:</strong> hisokanvnvwn@gmail.com</li>
+            </ul>
+
+            <h2>Обратная связь</h2>
+            <p>Если у вас есть вопросы или вы хотите записаться на консультацию, заполните форму ниже:</p>
+            
+            <!-- Форма обратной связи -->
+            <form action="submit_form.php" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Ваш email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Ваше сообщение</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ссылка для возврата назад -->
+    <div class="mt-4 text-center">
+        <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+    </div>
+
+    <!-- Подвал -->
+    <div class="footer">
+        <p>&copy; 2024 Light Academy | Все права защищены</p>
+    </div>
+
+    <!-- Подключаем Bootstrap JS и зависимость Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

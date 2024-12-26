@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вопросы и ответы - Light Academy</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Иконки для сайта -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Стили для меню */
+        .navbar {
+            background-color: #f1c40f; /* Желтый цвет */
+        }
+
+        .navbar a {
+            color: #333;
+        }
+
+        .navbar a:hover {
+            color: white;
+            background-color: #e67e22; /* Темно-оранжевый при наведении */
+        }
+
+        /* Стиль для заголовков */
+        h1, h2 {
+            color: #f1c40f; /* Желтый цвет */
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .question-icon {
+            font-size: 1.5rem;
+            color: #f1c40f;
+            margin-right: 10px;
+        }
+
+        .back-link {
+            color: #f1c40f;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Light Academy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">О колледже</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Направления</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html"><i class="fas fa-question-circle question-icon"></i>Вопросы и ответы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Вопросы и ответы -->
+    <div id="faq" class="section">
+        <div class="container">
+            <h1>Вопросы и ответы</h1>
+            <p>Здесь вы можете найти ответы на часто задаваемые вопросы, связанные с обучением, поступлением и жизнью в нашем колледже.</p>
+            
+            <!-- Список вопросов и ответов -->
+            <div class="list-group">
+                <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-target="#question1" aria-expanded="false" aria-controls="question1">
+                    Как поступить в Light Academy?
+                </button>
+                <div id="question1" class="collapse">
+                    <p>Для поступления необходимо пройти онлайн-заявку на нашем сайте и предоставить все необходимые документы.</p>
+                </div>
+
+                <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-target="#question2" aria-expanded="false" aria-controls="question2">
+                    Какие требования для поступления?
+                </button>
+                <div id="question2" class="collapse">
+                    <p>Для поступления необходимо предоставить аттестат о среднем образовании и сдать вступительные экзамены по профильным предметам.</p>
+                </div>
+
+                <button type="button" class="list-group-item list-group-item-action" data-bs-toggle="collapse" data-bs-target="#question3" aria-expanded="false" aria-controls="question3">
+                    Какие документы нужны для подачи заявки?
+                </button>
+                <div id="question3" class="collapse">
+                    <p>Нужны: копия аттестата, паспорт, фотографии, а также медицинская справка и результаты вступительных экзаменов.</p>
+                </div>
+            </div>
+
+            <!-- Ссылка для возврата назад -->
+            <div class="mt-4">
+                <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <div class="footer">
+        <p>&copy; 2024 Light Academy | Все права защищены</p>
+    </div>
+
+    <!-- Подключаем Bootstrap JS и зависимость Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
